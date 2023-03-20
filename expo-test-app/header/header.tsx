@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
 	},
   headerblock: {
     margin: 0,
-		paddingBottom:0,
+		paddingBottom:14,
     paddingRight: 22,
     paddingLeft: 20,
     paddingTop:10,

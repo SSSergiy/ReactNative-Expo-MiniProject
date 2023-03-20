@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import { Header } from './header/header';
+import { Main } from './main/main'
 export default function App() {
   return (
     <View style={styles.html}>
       <View style={styles.body
       }>
         <Header />
+        <Main/>
       </View>
 
       <StatusBar style='auto' />
