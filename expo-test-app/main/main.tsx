@@ -1,40 +1,39 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet, Text, View } from 'react-native';
-import { Slider } from '../slider/slider'
+import { Slider } from '../slider/slider';
+import { Balance } from '../balance/balance'
 
 export const Main = () => {
   return (
-    <LinearGradient
-      style={styles.main}
-      colors={['#FFFFFF', '#EBEBEB']}
-    >
+    <LinearGradient style={styles.main} colors={['#FFFFFF', '#EBEBEB']}>
       <View style={styles.titleBlock}>
         <Text style={styles.title}>Hi there</Text>
-        <Text style={styles.subTitle}>Fund your account to start investing.</Text>
-			</View>
-			<View>
-				<Slider/>
-			
-			</View>
+        <Text style={styles.subTitle}>
+          Fund your account to start investing.
+        </Text>
+      </View>
+      <View>
+        <Slider />
+      </View>
+        <Balance/>
     </LinearGradient>
   );
 };
 const styles = StyleSheet.create({
   subTitle: {
     fontSize: 12,
-    lineHeight: 20,
+    lineHeight: 20
   },
-  
+
   title: {
-    fontSize: 24,
-  // fontWeight:600,
+    fontSize: 24
   },
   titleBlock: {
     paddingBottom: 10,
     paddingRight: 26,
     paddingLeft: 20,
     paddingTop: 17,
-    marginBottom:3
+    marginBottom: 3
   },
   main: {
     borderTopRightRadius: 15,

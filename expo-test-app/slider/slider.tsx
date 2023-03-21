@@ -6,8 +6,7 @@ import CloseSlider from '../SVG/closeSlider';
 
 export const Slider = () => {
   return (
-		<View style={styles.slider}>
-			
+    <View style={styles.slider}>
       <View style={styles.sliderItem}>
         <LinearGradient
           style={styles.iconWrapper}
@@ -17,15 +16,13 @@ export const Slider = () => {
           locations={[0, 0, 0]}
         >
           <BaxeCard />
-				</LinearGradient>
-				
+        </LinearGradient>
         <View style={styles.textContent}>
           <Text style={styles.title}>Pay Offline With BAXE Card</Text>
           <Text style={styles.subTitle}>Easy Pay & Free Fee</Text>
         </View>
         <CloseSlider />
-			</View>
-			
+      </View>
       <View style={styles.sliderItem}>
         <LinearGradient
           style={styles.iconWrapper}
@@ -35,49 +32,45 @@ export const Slider = () => {
           locations={[0, 0, 0]}
         >
           <AccountLevel />
-				</LinearGradient>
-				
+        </LinearGradient>
         <View style={styles.textContent}>
           <Text style={styles.title}>1 More Step to Higher Account </Text>
           <Text style={styles.subTitle}>Easy Pay & Free Fee</Text>
         </View>
         <CloseSlider />
-			</View>
-			
-
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-	title: {
-		color: "#000000",
-		fontSize: 12,
-		marginBottom:11
-	},
-	subTitle: {
-		fontSize: 10,
-		color:"#91969F"
-	},
-	textContent:{
-	maxWidth:102,
-	},
-	sliderItem: {
-		paddingBottom: 10,
+  title: {
+    color: '#000000',
+    fontSize: 12,
+    marginBottom: 11
+  },
+  subTitle: {
+    fontSize: 10,
+    color: '#91969F'
+  },
+  textContent: {
+    maxWidth: 102
+  },
+  sliderItem: {
+    paddingBottom: 10,
     paddingRight: 21,
     paddingLeft: 20,
     paddingTop: 18,
-		height: 97,
-		maxWidth:218,
-		// position:"absolute",
-		display: 'flex',
+    height: 97,
+    maxWidth: 218,
+    display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
-		backgroundColor: '#F4F4F5',
-		gap:10,
-		borderRadius: 15,
-		flexDirection:"row"
-	},
+    backgroundColor: '#F4F4F5',
+    gap: 10,
+    borderRadius: 15,
+    flexDirection: 'row'
+  },
   iconWrapper: {
     width: 40,
     height: 40,
@@ -86,20 +79,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10
   },
-	slider: {
-		gap:15,
-		// position:"relative",
-    marginLeft: '21.3%',
-    // marginRight: "50%",
+  slider: {
+    gap: 15,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#ffffff',
-		height: '100%',
-		flexDirection: "row",
-		paddingBottom: 0,
+    height: '100%',
+    flexDirection: 'row',
+    paddingBottom: 0,
     paddingRight: 0,
-    paddingLeft:14,
+    paddingLeft: 96,
     paddingTop: 0,
+    marginBottom: 10
   }
 });
