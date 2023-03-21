@@ -15,11 +15,12 @@ export const Main = () => {
       <View>
         <Slider />
       </View>
-        <Balance/>
+        <Balance />
     </LinearGradient>
   );
 };
 const styles = StyleSheet.create({
+
   subTitle: {
     fontSize: 12,
     lineHeight: 20
@@ -29,18 +30,23 @@ const styles = StyleSheet.create({
     fontSize: 24
   },
   titleBlock: {
-    paddingBottom: 10,
+    width:"100%",
+    paddingBottom: 6,
     paddingRight: 26,
     paddingLeft: 20,
-    paddingTop: 17,
-    marginBottom: 3
+    paddingTop: 19,
+   
+    alignItems: "flex-start"
+
   },
   main: {
     borderTopRightRadius: 15,
     borderTopLeftRadius: 15,
     overflow: 'hidden',
     height: '100%',
-    minHeight: 1216
+    minHeight: 1216,
+    display: "flex",
+    alignItems:"center"
   },
   body: {
     width: 392,

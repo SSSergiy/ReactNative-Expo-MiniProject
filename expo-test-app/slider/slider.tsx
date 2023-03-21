@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     maxWidth: 102
   },
   sliderItem: {
-    paddingBottom: 10,
+    paddingBottom: 6,
     paddingRight: 21,
     paddingLeft: 20,
     paddingTop: 18,
@@ -91,6 +91,6 @@ const styles = StyleSheet.create({
     paddingRight: 0,
     paddingLeft: 96,
     paddingTop: 0,
-    marginBottom: 10
+    marginBottom: 13
   }
 });
