@@ -38,7 +38,7 @@ export const Slider = () => {
 				</LinearGradient>
 				
         <View style={styles.textContent}>
-          <Text style={styles.title}>1 More Step to Higher Account Level</Text>
+          <Text style={styles.title}>1 More Step to Higher Account </Text>
           <Text style={styles.subTitle}>Easy Pay & Free Fee</Text>
         </View>
         <CloseSlider />
@@ -52,7 +52,8 @@ export const Slider = () => {
 const styles = StyleSheet.create({
 	title: {
 		color: "#000000",
-		fontSize:12
+		fontSize: 12,
+		marginBottom:11
 	},
 	subTitle: {
 		fontSize: 10,
@@ -62,14 +63,13 @@ const styles = StyleSheet.create({
 	maxWidth:102,
 	},
 	sliderItem: {
-		top: 0,
-		left: 0,
-		// right: 0,
-		// bottom:0,
-		padding:20,
-		maxHeight: 97,
+		paddingBottom: 10,
+    paddingRight: 21,
+    paddingLeft: 20,
+    paddingTop: 18,
+		height: 97,
 		maxWidth:218,
-		position:"absolute",
+		// position:"absolute",
 		display: 'flex',
     alignItems: 'flex-start',
     justifyContent: 'center',
@@ -87,7 +87,8 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
 	slider: {
-		position:"relative",
+		gap:15,
+		// position:"relative",
     marginLeft: '21.3%',
     // marginRight: "50%",
     display: 'flex',
@@ -95,6 +96,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#ffffff',
 		height: '100%',
-		flexDirection:"row"
+		flexDirection: "row",
+		paddingBottom: 0,
+    paddingRight: 0,
+    paddingLeft:14,
+    paddingTop: 0,
   }
 });
