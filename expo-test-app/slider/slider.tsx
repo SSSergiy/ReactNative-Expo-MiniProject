@@ -85,11 +85,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#ffffff',
-    height: '100%',
     flexDirection: 'row',
     paddingBottom: 0,
     paddingRight: 0,
-    paddingLeft: 96,
+    paddingLeft: 60,
     paddingTop: 0,
     marginBottom: 13
   }

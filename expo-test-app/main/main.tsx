@@ -15,9 +15,9 @@ export const Main = () => {
           Fund your account to start investing.
         </Text>
       </View>
-      {/* <View>
+      <View>
         <Slider />
-      </View> */}
+      </View>
       {/* <Balance /> */}
       <QuickPay />
       <Products />
