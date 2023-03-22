@@ -1,17 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
+import { Footer } from './footer/footer';
 import { Header } from './header/header';
-import { Main } from './main/main'
-import { Footer } from './footer/footer'
+import { Main } from './main/main';
 export default function App() {
   return (
     <View style={styles.html}>
       <View style={styles.body}>
         <Header />
         <Main />
-        <Footer/>
+        <Footer />
       </View>
-
       <StatusBar style='auto' />
     </View>
   );
@@ -19,7 +18,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   html: {
-   
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -27,7 +25,6 @@ const styles = StyleSheet.create({
   },
   body: {
     width: 392,
-
     backgroundColor: '#dee0e2'
   }
 });

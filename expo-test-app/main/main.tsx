@@ -20,7 +20,7 @@ export const Main = () => {
       </View> */}
       {/* <Balance /> */}
       <QuickPay />
-      {/* <Products /> */}
+      <Products />
       {/* <ChatBlock /> */}
     </LinearGradient>
   );
