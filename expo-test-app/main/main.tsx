@@ -15,13 +15,13 @@ export const Main = () => {
           Fund your account to start investing.
         </Text>
       </View>
-      <View>
+      {/* <View>
         <Slider />
-      </View>
-      <Balance />
+      </View> */}
+      {/* <Balance /> */}
       <QuickPay />
-      <Products />
-      <ChatBlock />
+      {/* <Products /> */}
+      {/* <ChatBlock /> */}
     </LinearGradient>
   );
 };

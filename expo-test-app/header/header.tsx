@@ -1,8 +1,8 @@
-import { Image, StyleSheet, Text, View } from 'react-native';
-import Battery from '../SVG/battery';
+import { StyleSheet, Text, View ,Image} from 'react-native';
 import Burger from '../SVG/burger';
-import MobileNetwork from '../SVG/mobileNetwork';
-import Wifi from '../SVG/wifi';
+import MobileNetwork from '../SVG/mobileNetwork'
+import Wifi from '../SVG/wifi'
+import Battery from '../SVG/battery'
 
 export const Header = () => {
   return (
