@@ -1,8 +1,9 @@
 import * as React from "react"
+import Svg, { Circle, Path } from "react-native-svg"
 
 function Elips(props) {
   return (
-    <svg
+    <Svg
       width={12}
       height={13}
       viewBox="0 0 12 13"
@@ -10,7 +11,7 @@ function Elips(props) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <circle
+      <Circle
         cx={6}
         cy={6.3913}
         r={5}
@@ -18,7 +19,7 @@ function Elips(props) {
         stroke="#fff"
         strokeWidth={2}
       />
-    </svg>
+    </Svg>
   )
 }
 

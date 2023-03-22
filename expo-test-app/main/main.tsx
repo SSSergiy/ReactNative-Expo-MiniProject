@@ -18,10 +18,10 @@ export const Main = () => {
       <View>
         <Slider />
       </View>
-      {/* <Balance /> */}
+      <Balance />
       <QuickPay />
       <Products />
-      {/* <ChatBlock /> */}
+      <ChatBlock />
     </LinearGradient>
   );
 };
@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 15,
     borderTopLeftRadius: 15,
     overflow: 'hidden',
-
     display: 'flex',
     alignItems: 'center'
   }

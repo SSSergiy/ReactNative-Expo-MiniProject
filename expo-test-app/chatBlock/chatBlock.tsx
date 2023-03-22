@@ -13,7 +13,6 @@ export const ChatBlock = () => {
           <Text style={styles.messageText}>Messages</Text>
           <Count />
         </View>
-
         <View style={styles.posts}>
           <Text style={styles.postsText}>Posts</Text>
           <Count />
@@ -22,11 +21,9 @@ export const ChatBlock = () => {
       <User />
       <User />
       <User />
-
       <View style={{ height: 56 }}>
         <LinearGradient colors={['#FF3B61', '#FF9921']} style={styles.gradient}>
           <Text>View Messages</Text>
-
           <Arrow />
         </LinearGradient>
       </View>
@@ -78,7 +75,6 @@ const styles = StyleSheet.create({
   body: {
     overflow: 'hidden',
     width: '90%',
-  
     backgroundColor: '#EEEFF0',
     borderRadius: 20
   }
