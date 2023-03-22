@@ -1,16 +1,22 @@
 import { StyleSheet, Text, View } from 'react-native';
-
+import { LinearGradient } from 'expo-linear-gradient';
 import Deposit from '../SVG/balance/deposit';
 import Qrcode from '../SVG/balance/qrcode';
 import Transfer from '../SVG/balance/transfer';
 import Union from '../SVG/balance/union';
-import SvgBacground from '../SVG/svgBacground';
+// import SvgBacground from '../SVG/svgBacground';
 
 export const Balance = () => {
   return (
+       
     <View style={styles.container}>
+      <LinearGradient
+           style={{flex:1}}
+            colors={["#FAFBFF",'#C4CEE0']}
+           
+          >
       <Qrcode style={styles.qrcode} />
-      <SvgBacground style={styles.svgBacground} />
+     
       <View style={styles.relative}>
         <View style={styles.price}>
           <Text style={styles.balance}> Balance</Text>
@@ -18,7 +24,8 @@ export const Balance = () => {
             <Union /> 5.621
           </Text>
           <Text style={styles.euro}> € 0.00</Text>
-        </View>
+          </View>
+          
         <View style={styles.fx}>
           <View style={styles.fxx}>
             <View style={styles.fxxx}>
@@ -33,18 +40,23 @@ export const Balance = () => {
           <Text style={styles.text}> . . . </Text>
         </View>
       </View>
-    </View>
+      </LinearGradient>
+      </View>
   );
 };
 const styles = StyleSheet.create({
   relative: {
-    position: 'relative'
+    // position: 'relative'
+    paddingTop:30,
+    
   },
   price: {
-    position: 'absolute',
-    zIndex: 7,
-    top: -124,
-    left: 31
+    marginBottom: 20,
+    paddingLeft:33,
+    // position: 'absolute',
+    // zIndex: 7,
+    // top: -124,
+    // left: 31
   },
 
   fxxx: {
@@ -110,12 +122,6 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(216, 216, 216, 0.7)',
     borderRadius: 20,
     overflow: 'hidden',
-    backgroundColor: 'transparent',
-    backgroundImage: 'linear-gradient(0deg, #C4CEE0 -8.64%, #FAFBFF 96.85%)',
-    paddingBottom: 0,
-    paddingRight: 0,
-    paddingLeft: 0,
-    paddingTop: 0,
     marginBottom: 15
   }
 });
