@@ -1,16 +1,14 @@
-import * as React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
+import * as React from 'react';
 import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
-
 
 import Bmc from '../SVG/products/bmc';
 import EarnInterst from '../SVG/products/earnInterst';
 import Plus from '../SVG/products/plus';
 
 export const Products = () => {
-
   return (
-    <View style={{ marginBottom:10 }}>
+    <View style={{ marginBottom: 10 }}>
       <Text style={styles.productsTitle}>Products</Text>
       <View style={styles.productsItems}>
         <LinearGradient
@@ -24,7 +22,7 @@ export const Products = () => {
             style={{ flex: 1 }}
           >
             <View style={styles.textContent}>
-              {/* <EarnInterst style={{ marginBottom: 21 }} /> */}
+              <EarnInterst style={{ marginBottom: 21 }} />
               <Text style={{ marginBottom: 7, color: '#F4F4F5', fontSize: 12 }}>
                 Savings Account
               </Text>
@@ -38,7 +36,7 @@ export const Products = () => {
               </Text>
             </View>
             <View style={styles.earnContent}>
-              {/* <Plus /> */}
+              <Plus />
             </View>
           </ImageBackground>
         </LinearGradient>
@@ -54,7 +52,7 @@ export const Products = () => {
             style={{ flex: 1 }}
           >
             <View style={styles.textContent}>
-              {/* <Bmc style={{ marginBottom: 21 }} /> */}
+              <Bmc style={{ marginBottom: 21 }} />
               <Text style={{ marginBottom: 7, color: '#F4F4F5', fontSize: 12 }}>
                 BMC
               </Text>
@@ -119,9 +117,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 20
   },
-	earnblock: {
-		overflow:"hidden",
-		
+  earnblock: {
+    overflow: 'hidden',
+
     width: 169,
     height: 187,
     backgroundColor: '',
