@@ -7,7 +7,7 @@ import Plus from '../SVG/products/plus';
 export const Products = () => {
   // style={styles.titleBlock}
   return (
-    <View>
+    <View style={{ marginBottom:10 }}>
       <Text style={styles.productsTitle}>Products</Text>
       <View style={styles.productsItems}>
         <LinearGradient
@@ -116,7 +116,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 20
   },
-  earnblock: {
+	earnblock: {
+		overflow:"hidden",
+		
     width: 169,
     height: 187,
     backgroundColor: '',

@@ -4,6 +4,7 @@ import { Slider } from '../slider/slider';
 import { Balance } from '../balance/balance'
 import { QuickPay } from '../quickPay/quickPay'
 import { Products } from '../products/products'
+import { ChatBlock } from '../chatBlock/chatBlock'
 
 export const Main = () => {
   return (
@@ -19,7 +20,8 @@ export const Main = () => {
       </View>
       <Balance />
       <QuickPay />
-      <Products/>
+      <Products />
+      <ChatBlock/>
     </LinearGradient>
   );
 };
