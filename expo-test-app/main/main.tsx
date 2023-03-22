@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Slider } from '../slider/slider';
 import { Balance } from '../balance/balance'
 import { QuickPay } from '../quickPay/quickPay'
+import { Products } from '../products/products'
 
 export const Main = () => {
   return (
@@ -17,7 +18,8 @@ export const Main = () => {
         <Slider />
       </View>
       <Balance />
-      <QuickPay/>
+      <QuickPay />
+      <Products/>
     </LinearGradient>
   );
 };
