@@ -42,10 +42,13 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start'
   },
   main: {
+    borderRadius:15,
     borderTopRightRadius: 15,
     borderTopLeftRadius: 15,
     overflow: 'hidden',
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
+    flex: 1,
+    height:1150,
   }
 });

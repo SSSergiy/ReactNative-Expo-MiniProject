@@ -11,9 +11,7 @@ export const Slider = () => {
         <LinearGradient
           style={styles.iconWrapper}
           colors={['#FF3B61', '#520D8C']}
-          start={{ x: 10, y: 0 }}
-          end={{ x: 10, y: 0 }}
-          locations={[0, 0]}
+        
         >
           <BaxeCard />
         </LinearGradient>
@@ -27,9 +25,7 @@ export const Slider = () => {
         <LinearGradient
           style={styles.iconWrapper}
           colors={['#FF3B61', '#520D8C']}
-          start={{ x: 10, y: 0 }}
-          end={{ x: 10, y: 0 }}
-          locations={[0, 0]}
+         
         >
           <AccountLevel />
         </LinearGradient>
