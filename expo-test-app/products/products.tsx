@@ -8,10 +8,8 @@ export const Products = () => {
   // style={styles.titleBlock}
   return (
     <View>
-      <Text style={styles.productsTitle}  >
-		Products
-			</Text>
-      <View style={styles.productsItems} >
+      <Text style={styles.productsTitle}>Products</Text>
+      <View style={styles.productsItems}>
         <LinearGradient
           colors={['#520D8C', '#31C9B1']}
           start={{ x: 0, y: 0 }}
@@ -23,12 +21,20 @@ export const Products = () => {
             style={{ flex: 1 }}
           >
             <View style={styles.textContent}>
-            	<EarnInterst style={{marginBottom:21,}}/>
-	            <Text style={{marginBottom:7, color: '#F4F4F5', fontSize: 12 }}>Savings Account</Text>
-	            <Text style={{marginBottom:0, color: '#F4F4F5', fontSize: 20 }}>Earn Interst</Text>
-	            <Text style={{marginBottom:24, color: '#F4F4F5', fontSize: 12 }}>With Your BSC</Text>
+              <EarnInterst style={{ marginBottom: 21 }} />
+              <Text style={{ marginBottom: 7, color: '#F4F4F5', fontSize: 12 }}>
+                Savings Account
+              </Text>
+              <Text style={{ marginBottom: 0, color: '#F4F4F5', fontSize: 20 }}>
+                Earn Interst
+              </Text>
+              <Text
+                style={{ marginBottom: 24, color: '#F4F4F5', fontSize: 12 }}
+              >
+                With Your BSC
+              </Text>
             </View>
-            <View style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }}>
+            <View style={styles.earnContent}>
               <Plus />
             </View>
           </ImageBackground>
@@ -44,18 +50,27 @@ export const Products = () => {
             source={require('../assets/images/products/bmc.png')}
             style={{ flex: 1 }}
           >
-           <View style={styles.textContent}>
-           	 <Bmc style={{marginBottom:21,}}/>
-	            <Text style={{marginBottom:7, color: '#F4F4F5', fontSize: 12 }}>BMC</Text>
-	            <Text style={{marginBottom:0, color: '#F4F4F5', fontSize: 20 }}><Image
-	              style={{ width: 15, height: 19 }}
-	              source={require('../assets/images/products/group.png')}
-	            /> 1200.00</Text>
-	            
-	            <Text style={{marginBottom:24, color: '#F4F4F5', fontSize: 12 }}>€ 1,108.00</Text>
-           </View>
+            <View style={styles.textContent}>
+              <Bmc style={{ marginBottom: 21 }} />
+              <Text style={{ marginBottom: 7, color: '#F4F4F5', fontSize: 12 }}>
+                BMC
+              </Text>
+              <Text style={{ marginBottom: 0, color: '#F4F4F5', fontSize: 20 }}>
+                <Image
+                  style={{ width: 15, height: 19 }}
+                  source={require('../assets/images/products/group.png')}
+                />{' '}
+                1200.00
+              </Text>
 
-            <View style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }}>
+              <Text
+                style={{ marginBottom: 24, color: '#F4F4F5', fontSize: 12 }}
+              >
+                € 1,108.00
+              </Text>
+            </View>
+
+            <View style={styles.bmcContent}>
               <Text style={{ color: '#FF3B61', fontSize: 12 }}>+ € 298.00</Text>
             </View>
           </ImageBackground>
@@ -66,26 +81,41 @@ export const Products = () => {
 };
 
 const styles = StyleSheet.create({
-	textContent: {
-		paddingBottom: 0,
+  earnContent: {
+    backgroundColor: 'rgba(255, 255, 255, 0.7)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '24%'
+  },
+  bmcContent: {
+    paddingLeft: 22,
+    backgroundColor: 'rgba(255, 255, 255, 0.7)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    height: '24%'
+  },
+  textContent: {
+    paddingBottom: 0,
     paddingRight: 30,
     paddingLeft: 30,
-		paddingTop: 18,
-		marginBottom:0,
-	},
-	productsTitle: {
-		fontSize: 16,
-		paddingBottom: 0,
+    paddingTop: 18,
+    marginBottom: 0
+  },
+  productsTitle: {
+    fontSize: 16,
+    paddingBottom: 0,
     paddingRight: 0,
     paddingLeft: 24,
-		paddingTop: 0,
-		marginBottom:12,
-	},
-	productsItems: {
-		display: "flex",
-		flexDirection: "row",
-		gap:20,
-	},
+    paddingTop: 0,
+    marginBottom: 12
+  },
+  productsItems: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 20
+  },
   earnblock: {
     width: 169,
     height: 187,
