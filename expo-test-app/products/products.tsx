@@ -1,5 +1,5 @@
 import { LinearGradient } from 'expo-linear-gradient';
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View,ImageBackground } from 'react-native'
 import Plus from '../SVG/products/plus'
 import EarnInterst from '../SVG/products/earnInterst'
 import Bmc from '../SVG/products/bmc'
@@ -20,15 +20,21 @@ export const Products = () => {
 					end={{ x: 1, y: 1 }}
 					style={styles.earnblock}
 				>
-					
-			
+					<ImageBackground source={require('../assets/images/products/earnInterst.png')} style={{ flex: 1 }}>
+
+
+					</ImageBackground>
              </LinearGradient>
 				<LinearGradient
 					colors={['#FF3B61', '#FF9921']}
 					start={{ x: 0, y: 0 }}
 					end={{ x: 1, y: 1 }}
 					style={styles.earnblock}>
-					
+					<ImageBackground source={require('../assets/images/products/bmc.png')} style={{ flex: 1 }}>
+
+
+
+					</ImageBackground>
 				</LinearGradient>
 
 			</View>
