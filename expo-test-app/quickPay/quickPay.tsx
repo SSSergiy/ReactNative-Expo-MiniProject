@@ -45,6 +45,8 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   body: {
+    borderColor: "#EEEFF0",
+    borderWidth:1,
     backgroundColor: '#FBFBFB',
     borderRadius: 15,
     width: '90%',

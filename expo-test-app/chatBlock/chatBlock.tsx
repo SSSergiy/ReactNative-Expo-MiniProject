@@ -1,5 +1,9 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet, Text, View } from 'react-native';
+
+import Arrow from '../SVG/chatSvg/arrow';
 import Count from '../SVG/chatSvg/count';
+import { User } from './user';
 
 export const ChatBlock = () => {
   return (
@@ -14,15 +18,35 @@ export const ChatBlock = () => {
           <Text style={styles.postsText}>Posts</Text>
           <Count />
         </View>
-			</View>
-			<View>
-				
-			</View>
+      </View>
+      <User />
+      <User />
+      <User />
+
+      <View style={{ height: 56 }}>
+        <LinearGradient colors={['#FF3B61', '#FF9921']} style={styles.gradient}>
+          <Text>View Messages</Text>
+
+          <Arrow />
+        </LinearGradient>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  gradient: {
+    flex: 1,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: 56,
+    paddingLeft: 20,
+    paddingRight: 20,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20
+  },
   messages: {
     display: 'flex',
     flexDirection: 'row',
