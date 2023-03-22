@@ -9,7 +9,7 @@ export default function App() {
       <View style={styles.body}>
         <Header />
         <Main />
-        {/* <Footer/> */}
+        <Footer/>
       </View>
 
       <StatusBar style='auto' />
