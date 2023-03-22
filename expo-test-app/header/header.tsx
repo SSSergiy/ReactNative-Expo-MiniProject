@@ -9,7 +9,7 @@ export const Header = () => {
     <View style={styles.headerblock}>
       <View style={styles.headerTop}>
         <Text>9:41</Text>
-				<View style={styles.headerActions}>
+        <View style={styles.headerActions}>
           <MobileNetwork />
           <Wifi />
           <Battery />
@@ -26,38 +26,36 @@ export const Header = () => {
   );
 };
 const styles = StyleSheet.create({
-	headerTop: {
-		display: "flex",
-		flexDirection: "row",
-		gap: 0,
-		justifyContent: "space-between",
-		alignItems: 'center',
-	},
-	headerActions: {
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "center",
-		alignItems: 'center',
-		gap:2,
-	},
-	headerBottom: {
-		display: "flex",
-		flexDirection: "row",
-		gap: 0,
-		justifyContent: "space-between",
-		alignItems: 'center',
-	},
+  headerTop: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 0,
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  headerActions: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 2
+  },
+  headerBottom: {
+    display: 'flex',
+    flexDirection: 'row',
+    gap: 0,
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
   headerblock: {
     margin: 0,
-		paddingBottom:14,
+    paddingBottom: 14,
     paddingRight: 22,
     paddingLeft: 20,
-    paddingTop:10,
-		borderBottom: '1px solid red',
-		display: "flex",
-		gap:15
-		// flexDirection: "row",
-		
+    paddingTop: 10,
+    borderBottom: '1px solid red',
+    display: 'flex',
+    gap: 15
   },
   girlLogo: {
     width: 32,

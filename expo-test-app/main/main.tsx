@@ -2,6 +2,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { StyleSheet, Text, View } from 'react-native';
 import { Slider } from '../slider/slider';
 import { Balance } from '../balance/balance'
+import { QuickPay } from '../quickPay/quickPay'
 
 export const Main = () => {
   return (
@@ -15,17 +16,16 @@ export const Main = () => {
       <View>
         <Slider />
       </View>
-        <Balance />
+      <Balance />
+      <QuickPay/>
     </LinearGradient>
   );
 };
 const styles = StyleSheet.create({
-
   subTitle: {
     fontSize: 12,
     lineHeight: 20
   },
-
   title: {
     fontSize: 24
   },
@@ -35,9 +35,7 @@ const styles = StyleSheet.create({
     paddingRight: 26,
     paddingLeft: 20,
     paddingTop: 19,
-   
     alignItems: "flex-start"
-
   },
   main: {
     borderTopRightRadius: 15,
