@@ -39,8 +39,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 15,
     borderTopLeftRadius: 15,
     overflow: 'hidden',
-    height: '100%',
-    minHeight: 1216,
+
     display: 'flex',
     alignItems: 'center'
   },

@@ -1,14 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import { Header } from './header/header';
-import { Main } from './main/main'
+import { Main } from './main/main';
+import { Footer } from './footer/footer'
 export default function App() {
   return (
     <View style={styles.html}>
-      <View style={styles.body
-      }>
+      <View style={styles.body}>
         <Header />
-        <Main/>
+        <Main />
+        <Footer/>
       </View>
 
       <StatusBar style='auto' />
@@ -18,22 +19,16 @@ export default function App() {
 
 const styles = StyleSheet.create({
   html: {
-    marginLeft: "21.3%", 
-    // marginRight: "50%",
+    marginLeft: '21.3%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#ffffff',
-    height: "100%",
-    
+  
   },
   body: {
     width: 392,
-    height: "100%",
-    backgroundColor: "#dee0e2",
-    // paddingBottom:0,
-    // paddingRight: 26,
-    // paddingLeft: 14,
-    // paddingTop:10
+    
+    backgroundColor: '#dee0e2'
   }
 });

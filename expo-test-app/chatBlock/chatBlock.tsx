@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
   body: {
     overflow: 'hidden',
     width: '90%',
-    minHeight: '100%',
+  
     backgroundColor: '#EEEFF0',
     borderRadius: 20
   }
